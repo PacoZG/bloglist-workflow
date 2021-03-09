@@ -24,7 +24,7 @@ jobs:
       - name: npm run build
         run: npm run build
       - name: install cross-env
-        run: npm install -g cross-env
+        run: npm install --save-dev cross-env
       - name: install async-errors
         run: npm install express-async-errors --save
       - name: install mongoose
@@ -68,7 +68,7 @@ jobs:
           heroku_app_name: "bloglist-pipeline" # Must be unique in Heroku
           heroku_email: "sirpaquillo1@yahoo.com.mx"
           dontuseforce: false
-          # procfile: "web: npm run start-prod"
+          procfile: "web: npm run production"
           # healthcheck: "https://bloglist-pipeline.herokuapp.com/health"
           # checkstring: "ok"
           delay: 5
