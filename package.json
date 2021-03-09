@@ -26,10 +26,8 @@
   },
   "scripts": {
     "start": "set PORT=3000 && react-scripts start",
-    "start-prod": "cross-env NODE_ENV=production node index.js",
+    "start:prod": "cross-env NODE_ENV=production node index.js",
     "build": "react-scripts build",
-    "eject": "react-scripts eject",
-    "server": "json-server -p3001 db.json",
     "eslint": "eslint './**/*.{js,jsx}'",
     "test": "cross-env NODE_ENV=test jest --verbose --runInBand --detectOpenHandles --silent",
     "start:test": "cross-env NODE_ENV=test node index.js",
