@@ -21,8 +21,6 @@ jobs:
         run: npm install
       - name: lint
         run: npm run eslint
-      - name: npm run build
-        run: npm run build
       - name: install cross-end
         run: npm install --save-dev cross-env
       - name: install async-errors
@@ -51,6 +49,8 @@ jobs:
         env:
           TEST_MONGODB_URI: ${{ secrets.TEST_MONGODB_URI }}
           SECRET: ${{ secrets.SECRET }}
+      - name: npm run build
+        run: npm run build
         # - name: Bump version and push tag
         # uses: anothrNick/github-tag-action@1.33.0
         # if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ', '), '#skip') }}
