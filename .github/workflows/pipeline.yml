@@ -41,7 +41,7 @@ jobs:
         run: npm run test
         env:
           TEST_MONGODB_URI: ${{ secrets.TEST_MONGODB_URI }}
-          SECRET: ${{ secrets.SECRET}}
+          SECRET: ${{ secrets.SECRET }}
       - name: E2E tests
         uses: cypress-io/github-action@v2
         with:
@@ -50,4 +50,4 @@ jobs:
           wait-on: 'http://localhost:3001'
         env:
           TEST_MONGODB_URI: ${{ secrets.TEST_MONGODB_URI }}
-          SECRET: ${{ secrets.SECRET}}
+          SECRET: ${{ secrets.SECRET }}
