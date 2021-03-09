@@ -23,8 +23,15 @@ jobs:
         run: npm run eslint
       - name: npm run build
         run: npm run build
-      - name: install cross-env
+      - name: install dependencies
         run: npm install --save-dev cross-env
+        run: npm install express-async-errors --save
+        run: npm install mongoose
+        run: npm install --save mongoose-unique-validator
+        run: npm install jsonwebtoken
+        run: npm install bcrypt
+        run: npm install supertest --save-dev
+      
       - name: npm run test
         run: npm run test
       - name: e2e tests
