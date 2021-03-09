@@ -17,12 +17,12 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-      - name: npm run build
-        run: npm run build
       - name: npm install
         run: npm install
       - name: lint
         run: npm run eslint
+      - name: npm run build
+        run: npm run build
       - name: install cross-end
         run: npm install --save-dev cross-env
       - name: install async-errors
