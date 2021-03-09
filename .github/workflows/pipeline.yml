@@ -23,21 +23,20 @@ jobs:
         run: npm run eslint
       - name: npm run build
         run: npm run build
-      # - name: install cross-end
-      #   run: npm install --save-dev cross-env
-      # - name: install async-errors
-      #   run: npm install express-async-errors --save
-      # - name: install mongoose
-      #   run: npm install mongoose
-      # - name: install unique-validator      
-      #   run: npm install --save mongoose-unique-validator
-      # - name: install jsonwebtoken
-      #   run: npm install jsonwebtoken
-      # - name: install bcrypt
-      #   run: npm install bcrypt
-      # - name: install supertest
-      #   run: npm install supertest --save-dev
-      
+      - name: install cross-end
+        run: npm install --save-dev cross-env
+      - name: install async-errors
+        run: npm install express-async-errors --save
+      - name: install mongoose
+        run: npm install mongoose
+      - name: install unique-validator      
+        run: npm install --save mongoose-unique-validator
+      - name: install jsonwebtoken
+        run: npm install jsonwebtoken
+      - name: install bcrypt
+        run: npm install bcrypt
+      - name: install supertest
+        run: npm install supertest --save-dev
       - name: npm run test
         run: npm run test
         env:
@@ -46,8 +45,9 @@ jobs:
       - name: E2E tests
         uses: cypress-io/github-action@v2
         with:
-          command: npm run test:e2e
+          command: npm run cypress:open
           start: npm run start-prod
-          wait-on: http://localhost:3001
+          wait-on: http://localhost:3000
         env:
           TEST_MONGODB_URI: ${{ secrets.TEST_MONGODB_URI }}
+          SECRET: ${{ secrets.SECRET}}
