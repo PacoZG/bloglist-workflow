@@ -34,10 +34,6 @@ const mostBlogs = blogs => {
 }
 
 const mostLikes = blogs => {
-  /*var sumOfLikes = _(blogs).groupBy('author').map((objs, key) => ({
-    'author': key,
-    'likes': _.sumBy(objs, 'likes') }))
-    .value()*/
   var posts = _.groupBy(blogs, 'author')
   var sumOfLikes = []
   var totalLikes = 0
