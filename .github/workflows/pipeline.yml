@@ -68,7 +68,7 @@ jobs:
           heroku_app_name: "bloglist-pipeline" # Must be unique in Heroku
           heroku_email: "sirpaquillo1@yahoo.com.mx"
           dontuseforce: false
-          procfile: "web: npm run start:prod"
+          procfile: "web: npm run start-prod"
           # healthcheck: "https://bloglist-pipeline.herokuapp.com/health"
           # checkstring: "ok"
           delay: 5

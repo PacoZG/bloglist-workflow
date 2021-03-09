@@ -1,7 +1,28 @@
 {
-  "name": "bloglist-frontend",
-  "version": "0.1.0",
-  "private": true,
+  "name": "bloglist",
+  "version": "1.0.0",
+  "description": "Bloglist workflow for part 11",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "set PORT=3000 && react-scripts start",
+    "start-prod": "cross-env NODE_ENV=production node index.js",
+    "build": "react-scripts build",
+    "eslint": "eslint './**/*.{js,jsx}'",
+    "test": "cross-env NODE_ENV=test jest --verbose --runInBand --detectOpenHandles --silent",
+    "start:test": "cross-env NODE_ENV=test node index.js",
+    "cypress:open": "cypress open",
+    "test:e2e": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PacoZG/bloglist-workflow.git"
+  },
+  "keywords": [
+    "fullstack-open"
+  ],
+  "author": "Paco Zavala",
+  "license": "ISC",
+  "homepage": "https://github.com/PacoZG/bloglist-workflow",
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.57",
@@ -23,16 +44,6 @@
     "react-scripts": "^4.0.3",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0"
-  },
-  "scripts": {
-    "start": "set PORT=3000 && react-scripts start",
-    "start:prod": "cross-env NODE_ENV=production node index.js",
-    "build": "react-scripts build",
-    "eslint": "eslint './**/*.{js,jsx}'",
-    "test": "cross-env NODE_ENV=test jest --verbose --runInBand --detectOpenHandles --silent",
-    "start:test": "cross-env NODE_ENV=test node index.js",
-    "cypress:open": "cypress open",
-    "test:e2e": "cypress run"
   },
   "eslintConfig": {
     "extends": "react-app"
