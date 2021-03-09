@@ -1,0 +1,250 @@
+.success {
+  color: green;
+  background: lightgrey;
+  font-size: 30px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
+
+.error {
+  color: red;
+  background: lightgrey;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: bold;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
+
+.blog {
+  width: 100%;
+  color: black;
+  background: lightgrey;
+  font-size: 20px;
+  border-style: groove;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 1px;
+  margin-top: 1px;
+  width: auto;
+  height: auto;
+}
+
+.normal {
+  color: black;
+  background: lightgrey;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 1px;
+  margin-top: 1px;
+  width: auto;
+  height: auto;
+}
+
+.blogStyle {
+  width:100%;
+  padding-Top: 10px;
+  padding-Left: 2px;
+  border-style: solid;
+  border-Width: 1px;
+  margin-Bottom: 5px;
+}
+
+.blogRemoved {
+  color: orange;
+  background: lightgrey;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
+
+.button {
+  padding: 3px 15px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: #584d38;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px #999;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 1px;
+  justify-content: flex-end;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.blogButton {
+  justify-content: flex-end;
+  padding: 1px 12px;
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: #664a17;
+  border: groove;
+  border-radius: 10px;
+  box-shadow: 2px 4px rgb(77, 16, 16);
+  margin-left: 20px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  justify-content: flex-end;
+}
+
+.blogButton:hover {
+  background-color: #00000000
+}
+
+.blogButton:active {
+  background-color: #bcc44a63;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.logoutButton {
+  justify-content: flex-end;
+  padding: 3px 15px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: #584d38;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px #999;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 1px;
+}
+
+.logoutButton:hover {background-color: #3e8e41}
+
+.logoutButton:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.deleteButton {
+  padding: 1px 8px;
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: rgb(252, 252, 252);
+  background-color: #11235e;
+  border: groove;
+  border-radius: 10px;
+  box-shadow: 2px 4px rgb(77, 16, 16);
+  margin-left: 20px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  position: relative;
+  left: 40px
+}
+
+.deleteButton:hover {
+  background-color: #491c1cb2
+}
+
+.deleteButton:active {
+  background-color: #0e343fb9;
+  box-shadow: 0 5px rgb(0, 16, 158);
+  transform: translateY(4px);
+}
+
+.labelStyle {
+  height: 35px;
+  background-color: rgb(247, 223, 193);
+  padding: 10px 20px;
+  font-weight: bolder;
+  color:black;
+  font-size: 25px;
+  border-style: groove;
+  border-radius: 10px;
+  margin-bottom: 1px;
+  margin-top: 1px;
+  width: 100%;
+}
+.nameStyle{
+  background-color: cornflowerblue;
+  padding: 10px 20px;
+  color:#102e20;
+  font-size: 20px;
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
+
+.headerStyle{
+  height: auto;
+  background-color: lightgray;
+  padding: 1px 10px;
+  color:black;
+  font-style: normal;
+  font: normal small-caps normal 16px/1.4 Georgia;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.createStyle {
+  height: 60px;
+  background-color: lightgray;
+  padding: 0px 20px;
+  color:black;
+  font-style: normal;
+  font-size: 40px;
+  border-radius: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+.background{
+  width:100%;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+td {
+  padding: 5px;
+}
+
+table {
+  border-collapse: separate;
+}
+
+.textarea {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
