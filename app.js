@@ -39,11 +39,11 @@ if (process.env.NODE_ENV === 'test') {
   app.use('/api/testing', testingRouter)
 }
 
-app.get('/health', (req, res) => {
+app.get('/api/health', (req, res) => {
   res.send('ok')
 })
 
-app.get('/version', (req, res) => {
+app.get('/api/version', (req, res) => {
   res.send('1') // change this string to ensure a new version deployed
 })
 
