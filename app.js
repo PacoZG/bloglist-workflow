@@ -39,6 +39,14 @@ if (process.env.NODE_ENV === 'test') {
   app.use('/api/testing', testingRouter)
 }
 
+app.get('/health', (req, res) => {
+  res.send('ok')
+})
+
+app.get('/version', (req, res) => {
+  res.send('1') // change this string to ensure a new version deployed
+})
+
 app.use(middleware.unknownEndpoint)
 app.use(middleware.errorHandler)
 
