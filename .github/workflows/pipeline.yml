@@ -54,3 +54,4 @@ jobs:
           rollbackonhealthcheckfailed: true
         env:
           NODE_ENV: 'production'
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
