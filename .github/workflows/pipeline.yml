@@ -28,15 +28,15 @@ jobs:
         env:
           TEST_MONGODB_URI: ${{ secrets.TEST_MONGODB_URI }}
           SECRET: ${{ secrets.SECRET }}
-      - name: E2E tests
-        uses: cypress-io/github-action@v2
-        with:
-          command: npm run test:e2e
-          start: npm run start:test, npm start
-          wait-on: 'http://localhost:3001'
-        env:
-          TEST_MONGODB_URI: ${{ secrets.TEST_MONGODB_URI }}
-          SECRET: ${{ secrets.SECRET }}
+      # - name: E2E tests
+      #   uses: cypress-io/github-action@v2
+      #   with:
+      #     command: npm run test:e2e
+      #     start: npm run start:test, npm start
+      #     wait-on: 'http://localhost:3001'
+      #   env:
+      #     TEST_MONGODB_URI: ${{ secrets.TEST_MONGODB_URI }}
+      #     SECRET: ${{ secrets.SECRET }}
       - name: Deployment to Heroku
         uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ', '), '#skip') }}
