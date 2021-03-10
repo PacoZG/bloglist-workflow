@@ -26,7 +26,7 @@ jobs:
       - name: Local tests
         run: npm run test
         env:
-          NODE_ENV: test
+          NODE_ENV: 'test'
           TEST_MONGODB_URI: ${{ secrets.TEST_MONGODB_URI }}
           SECRET: ${{ secrets.SECRET }}
       - name: E2E tests
@@ -36,7 +36,7 @@ jobs:
           start: npm run start:test, npm start
           wait-on: 'http://localhost:3001'
         env:
-          NODE_ENV: test
+          NODE_ENV: 'test'
           TEST_MONGODB_URI: ${{ secrets.TEST_MONGODB_URI }}
           SECRET: ${{ secrets.SECRET }}
       - name: Deployment to Heroku
@@ -53,4 +53,4 @@ jobs:
           delay: 5
           rollbackonhealthcheckfailed: true
         env:
-          NODE_ENV: production
+          NODE_ENV: 'production'
