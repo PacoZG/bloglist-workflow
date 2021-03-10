@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "set PORT=3000 && react-scripts start",
-    "production": "node index.js",
+    "production": "cross-env NODE_ENV=production node index.js",
     "build": "react-scripts build",
     "eslint": "eslint './**/*.{js,jsx}'",
     "test": "cross-env NODE_ENV=test jest --verbose --runInBand --detectOpenHandles --silent",
@@ -21,9 +21,7 @@
     "fullstack-open"
   ],
   "author": "Paco Zavala",
-  "bugs": {
-    "url": "https://github.com/PacoZG/bloglist-workflow/issues"
-  },
+  "license": "ISC",
   "homepage": "https://github.com/PacoZG/bloglist-workflow",
   "dependencies": {
     "@material-ui/core": "^4.11.2",
