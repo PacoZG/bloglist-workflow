@@ -37,7 +37,7 @@ jobs:
         run: npm install supertest --save-dev
       - name: install cross-env
         run: npm install --save-dev cross-env
-      - name: Backend tests
+      - name: npm run test
         run: npm run test
         env:
           TEST_MONGODB_URI: ${{ secrets.TEST_MONGODB_URI }}
@@ -73,5 +73,3 @@ jobs:
           # checkstring: "ok"
           delay: 5
           rollbackonhealthcheckfailed: true
-        env:
-          NODE_ENV:  'production'
