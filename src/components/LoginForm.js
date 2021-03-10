@@ -22,6 +22,7 @@ const LoginForm = () => {
 
   const handleLogin = async (event) => {
     event.preventDefault()
+    console.log('CREDENCIALS: ', credentials)
     try {
       var user = await loginService.login(credentials)
       dispatch(userLogin(user))

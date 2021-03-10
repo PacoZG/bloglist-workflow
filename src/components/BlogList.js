@@ -9,9 +9,8 @@ const BlogList = () => {
 
   return (
     <div className="container">
-
+      <h1>{'Blogs'}</h1>
       <Table striped bordered hover >
-        <h1>{'Blogs'}</h1>
         <tbody>
           {blogs.map(blog => (
             <tr key={blog.id} >
