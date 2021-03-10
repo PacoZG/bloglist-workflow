@@ -40,6 +40,7 @@ const Blog = () => {
       dispatch(commentBlog(commentedBlog))
     }
   }
+
   return (
     <div>
       {blog ?
