@@ -35,8 +35,8 @@ jobs:
         run: npm install bcrypt
       - name: install supertest
         run: npm install supertest --save-dev
-      # - name: install cross-env
-      #   run: npm install --save-dev cross-env
+      - name: install cross-env
+        run: npm install --save-dev cross-env
       - name: Backend tests
         run: npm run test
         env:
