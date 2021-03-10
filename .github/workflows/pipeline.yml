@@ -21,9 +21,9 @@ jobs:
         run: npm install
       - name: lint
         run: npm run eslint
-      - name: npm run build
+      - name: Building for production
         run: npm run build
-      - name: npm run test
+      - name: Local tests
         run: npm run test
         env:
           TEST_MONGODB_URI: ${{ secrets.TEST_MONGODB_URI }}
