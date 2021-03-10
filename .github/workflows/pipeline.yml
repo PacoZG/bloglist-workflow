@@ -48,10 +48,11 @@ jobs:
           heroku_email: "sirpaquillo1@yahoo.com.mx"
           dontuseforce: false
           procfile: 'web: npm run production'
-          # healthcheck: "https://bloglist-pipeline.herokuapp.com/health"
-          # checkstring: "ok"
+          healthcheck: "https://bloglist-pipeline.herokuapp.com/health"
+          checkstring: "ok"
           delay: 5
           rollbackonhealthcheckfailed: true
         env:
           NODE_ENV: 'production'
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
+          SECRET: ${{ secrets.SECRET }}
