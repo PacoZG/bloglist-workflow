@@ -53,8 +53,8 @@ jobs:
           TEST_MONGODB_URI: ${{ secrets.TEST_MONGODB_URI }}
           SECRET: ${{ secrets.SECRET }}
           NODE_ENV: "test"
-      - name: npm run build
-        run: npm run build
+      # - name: npm run build
+      #   run: npm run build
         # - name: Bump version and push tag
         # uses: anothrNick/github-tag-action@1.33.0
         # if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ', '), '#skip') }}
