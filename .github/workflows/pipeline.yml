@@ -51,8 +51,8 @@ jobs:
         env:
           TEST_MONGODB_URI: ${{ secrets.TEST_MONGODB_URI }}
           SECRET: ${{ secrets.SECRET }}
-      # - name: npm run build
-      #   run: npm run build
+      - name: npm run build
+        run: npm run build
         # - name: Bump version and push tag
         # uses: anothrNick/github-tag-action@1.33.0
         # if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ', '), '#skip') }}
@@ -74,4 +74,4 @@ jobs:
           delay: 5
           rollbackonhealthcheckfailed: true
         env:
-          NODE_ENV: "production"
+          NODE_ENV:  'production'
