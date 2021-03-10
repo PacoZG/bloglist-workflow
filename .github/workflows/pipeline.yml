@@ -52,7 +52,3 @@ jobs:
           checkstring: "ok"
           delay: 5
           rollbackonhealthcheckfailed: true
-        env:
-          NODE_ENV: 'production'
-          MONGODB_URI: ${{ secrets.MONGODB_URI }}
-          SECRET: ${{ secrets.SECRET }}
