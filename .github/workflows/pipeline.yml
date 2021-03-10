@@ -23,20 +23,6 @@ jobs:
         run: npm run eslint
       - name: npm run build
         run: npm run build
-      - name: install async-errors
-        run: npm install express-async-errors --save
-      - name: install mongoose
-        run: npm install mongoose
-      - name: install unique-validator      
-        run: npm install --save mongoose-unique-validator
-      - name: install jsonwebtoken
-        run: npm install jsonwebtoken
-      - name: install bcrypt
-        run: npm install bcrypt
-      - name: install supertest
-        run: npm install supertest --save-dev
-      - name: install cross-env
-        run: npm install --save-dev cross-env
       - name: npm run test
         run: npm run test
         env:
