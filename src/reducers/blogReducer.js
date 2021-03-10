@@ -2,8 +2,8 @@ import blogService from '../services/blogs'
 import localdb from '../utils/localdb'
 
 const blogReducer = (state = [], action) => {
-  console.log('BLOGS STATE IN BLOGREDUCER:', state)
-  console.log('BLOGS ACTION.TYPE IN BLOGREDUCER:', action)
+  // console.log('BLOGS STATE IN BLOGREDUCER:', state)
+  // console.log('BLOGS ACTION.TYPE IN BLOGREDUCER:', action)
   switch (action.type) {
   case 'INIT_BLOGS':
     return action.data
@@ -18,7 +18,7 @@ const blogReducer = (state = [], action) => {
   case 'DELETE':
     return state.filter(blog => blog.id !== action.data)
   case 'COMMENT': {
-    console.log('ACTION DATA inside COMMET:', action.data)
+    //console.log('ACTION DATA inside COMMET:', action.data)
     const id= action.data.id
     const blogToComment = state.find ( blog => blog.id === id)
     const changedBlog = { ...blogToComment, comments: action.data.comments }

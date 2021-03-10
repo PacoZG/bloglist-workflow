@@ -5,7 +5,7 @@ import { Alert } from '@material-ui/lab'
 
 const Notification = () => {
   const notification = useSelector((state) => state.notification)
-  console.log('NOTIFICATION INSIDE COMPONENT:', notification)
+  //console.log('NOTIFICATION INSIDE COMPONENT:', notification)
 
   const message = notification.message
   //const colorClass = notification.color;

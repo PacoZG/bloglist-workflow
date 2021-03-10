@@ -16,7 +16,7 @@ const userReducer = (state = localDB.loadUser(), action) => {
 export const userLogin = (user) => {
   return async (dispatch) => {
     localDB.saveUser(user)
-    console.log('USER TOKEN', user.token)
+    //console.log('USER TOKEN', user.token)
     dispatch({
       type: 'LOGIN',
       data: user,
