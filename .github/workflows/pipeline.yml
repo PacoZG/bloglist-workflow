@@ -37,7 +37,7 @@ jobs:
         run: npm install supertest --save-dev
       # - name: install cross-env
       #   run: npm install --save-dev cross-env
-      - name: npm run test
+      - name: Backend tests
         run: npm run test
         env:
           TEST_MONGODB_URI: ${{ secrets.TEST_MONGODB_URI }}
@@ -45,7 +45,7 @@ jobs:
       - name: E2E tests
         uses: cypress-io/github-action@v2
         with:
-          command: npm run test:e2e
+          command: E2E tests
           start: npm run start:test, npm start
           wait-on: 'http://localhost:3001'
         env:
