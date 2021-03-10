@@ -42,7 +42,6 @@ jobs:
         env:
           TEST_MONGODB_URI: ${{ secrets.TEST_MONGODB_URI }}
           SECRET: ${{ secrets.SECRET }}
-          NODE_ENV: "test"
       - name: E2E tests
         uses: cypress-io/github-action@v2
         with:
@@ -52,7 +51,6 @@ jobs:
         env:
           TEST_MONGODB_URI: ${{ secrets.TEST_MONGODB_URI }}
           SECRET: ${{ secrets.SECRET }}
-          NODE_ENV: "test"
       # - name: npm run build
       #   run: npm run build
         # - name: Bump version and push tag
