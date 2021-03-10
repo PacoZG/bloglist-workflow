@@ -5,6 +5,7 @@ import { Table } from 'react-bootstrap'
 
 const UserList = () => {
   const users = useSelector(state => state.users)
+  console.log('USERS: ', users)
 
   return (
     <div>
