@@ -25,7 +25,7 @@
   "bugs": {
     "url": "https://github.com/PacoZG/bloglist-workflow/issues"
   },
-  "homepage": "https://github.com/PacoZG/bloglist-workflow",
+  "homepage": "https://bloglist-pipeline.herokuapp.com",
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.57",
