@@ -28,7 +28,7 @@ jobs:
         env:
           TEST_MONGODB_URI: ${{ secrets.TEST_MONGODB_URI }}
           SECRET: ${{ secrets.SECRET }}
-          NODE_ENV: test
+          NODE_ENV: 'test'
       - name: E2E tests
         uses: cypress-io/github-action@v2
         with:
@@ -38,7 +38,7 @@ jobs:
         env:
           TEST_MONGODB_URI: ${{ secrets.TEST_MONGODB_URI }}
           SECRET: ${{ secrets.SECRET }}
-          NODE_ENV: test
+          NODE_ENV: 'test'
       - name: Deployment to Heroku
         uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ', '), '#skip') }}
@@ -53,4 +53,4 @@ jobs:
           delay: 5
           rollbackonhealthcheckfailed: true
         env:
-          NODE_ENV: production
+          NODE_ENV: 'production'
