@@ -1,4 +1,4 @@
-name: Deploying pipeline
+name: Bloglist pipeline
 
 on:
   push:
