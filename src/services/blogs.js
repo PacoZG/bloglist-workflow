@@ -23,6 +23,7 @@ const update = async (updatedObject) => {
   const response = await axios.put(`${baseUrl}/${updatedObject.id}`, updatedObject, getConfig())
   return response.data
 }
+
 const remove = async (id) => {
   const response = await axios.delete(`${baseUrl}/${id}`, getConfig())
   return response.data
